@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>各分店员工考勤报表系统</title>
+<link rel="icon" type="image/png" href="logo.png">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    font-family:"Microsoft YaHei", Arial, sans-serif;
+    min-height:100vh;
+    background:linear-gradient(180deg,#8B0000 0%, #C62828 50%, #8B0000 100%);
+    text-align:center;
+    padding:20px;
+}
+.main-container{
+    max-width:700px;
+    margin:0 auto;
+    background:#FFF8DC;
+    border:6px solid #FFD700;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 0 25px rgba(0,0,0,0.35);
+}
+.logo{margin-bottom:20px;}
+.logo img{max-width:320px;width:100%;height:auto;}
+.title{
+    background:#C62828;
+    color:#FFD700;
+    font-size:34px;
+    font-weight:bold;
+    padding:15px;
+    border:3px solid #FFD700;
+    border-radius:12px;
+    margin-bottom:10px;
+    letter-spacing:2px;
+}
+.subtitle{
+    color:#8B0000;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+.branch-btn{
+    display:block;
+    width:100%;
+    padding:20px;
+    margin:16px 0;
+    text-decoration:none;
+    font-size:28px;
+    font-weight:bold;
+    color:#FFD700;
+    background:linear-gradient(180deg,#D32F2F,#A30000);
+    border:3px solid #FFD700;
+    border-radius:12px;
+    transition:all .3s ease;
+}
+.branch-btn:hover{
+    background:linear-gradient(180deg,#FFD700,#FBC02D);
+    color:#8B0000;
+}
+.branch-btn.disabled{
+    background:#9E9E9E;
+    color:#E0E0E0;
+    border-color:#C0C0C0;
+    pointer-events:none;
+}
+.footer{
+    margin-top:25px;
+    color:#8B0000;
+    font-size:14px;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+<div class="main-container">
+<div class="logo">
+<img src="logo.png" alt="Company Logo">
+</div>
+
+<div class="title">各分店员工考勤报表系统</div>
+<div class="subtitle">员工考勤与工时管理系统</div>
+
+<a class="branch-btn" href="https://plaza2022.github.io/BitacoraPC/" target="_blank">A号店</a>
+<a class="branch-btn disabled" href="#">C号店</a>
+<a class="branch-btn disabled" href="#">D号店</a>
+<a class="branch-btn" href="https://plaza2022.github.io/BitacoraPC_TB/" target="_blank">5号店</a>
+
+<div class="footer">Plaza China · Attendance Reporting System</div>
+</div>
+</body>
+</html>
